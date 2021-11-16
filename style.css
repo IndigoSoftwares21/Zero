@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #FAA613;
+   
+   
+}
+.body
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: 10px;
+}
+.navigation
+{
+    width: 70px;
+    height: 100vh;
+    
+    position: relative;
+    background: #550527;
+    
+    padding: 20px;
+    box-shadow: 10px 0 0 #2A9D8F;
+    font-family: 'Raleway', sans-serif;
+    border-left: 10px solid #550527;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    
+}
+.navigation:hover
+{
+    width: 300px;
+    
+}
+.navigation ul
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navigation ul li
+{
+    list-style: none;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active
+{
+    background: #2A9D8F;
+    
+}
+.navigation ul li a
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+.navigation ul li.active a::before
+{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #550527;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #2A9D8F;
+}
+.navigation ul li.active a::after
+{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #550527;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #2A9D8F;
+}
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.navigation ul li a .icon ion-icon
+{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 50px;
+    white-space: nowrap;
+}
+.bar
+{
+    width: 100%;
+    box-shadow: 7px 7px #2A9D8F;
+    
+    height: fit-content;
+    background: #550527;
+    display: block;
+}
+.img1
+{
+    height: 300px;
+    margin-left: 10px;
+    opacity: 0.3;
+}
+.main
+{
+    font-family:'Genos', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: black 2px;
+    font-size: 35px;
+    padding: 5px;
+}
+

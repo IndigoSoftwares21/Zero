@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Zero Academy</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+ href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200&display=swap" 
+ rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,300;0,500;1,100;1,200&display=swap" 
+rel="stylesheet">
+</head>
+<body id="body">
+    <div class="bar">
+        <h1 class="main">Zero Academy</h1>
+    </div>
+    <section class="body">
+        <div class="navigation">
+            <ul>
+                <li id="home" class="list active">
+                    <a href="">
+                        <span id="home" class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                         </span>
+                            <span class="title">
+                                    Home
+                               </span>
+    
+                    </a>
+                </li>
+                <li id="learn" class="list">
+                    <a href="">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                         </span>
+                            <span class="title">
+                                    Learn
+                               </span>
+    
+                    </a>
+                </li>
+                <li id="updates" class="list">
+                    <a href="">
+                        <span class="icon">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                         </span>
+                            <span class="title">
+                                    Updates
+                               </span>
+    
+                    </a>
+                </li>
+                <li id="help" class="list">
+                    <a href="">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                         </span>
+                            <span class="title">
+                                    Help
+                               </span>
+    
+                    </a>
+                </li>
+                <li id="signout" class="list">
+                    <a href="">
+                        <span class="icon">
+                            <ion-icon name="power-outline"></ion-icon>
+                         </span>
+                            <span class="title">
+                                        Sign Out
+                               </span>
+    
+                    </a>
+                </li>
+               
+            </ul>
+    
+        </div>
+       <img class="img1" src="image1.png" alt="">
+    </section>
+    
+    
+    <script>
+        const home = document.getElementById("home");
+        const learn = document.getElementById("learn");
+        const updates = document.getElementById("updates");
+        const help = document.getElementById("help");
+        const signout = document.getElementById("signout");
+
+        signout.onmouseover = function hover() {
+           signout.className = "list active";
+           home.className = "list";
+           
+       }
+       signout.onmouseout = function nohover() {
+        home.className = "list active";
+           updates.className = "list";  
+           learn.className = "list"; 
+           help.className = "list";  
+           signout.className = "list";  
+       }
+       help.onmouseover = function hover() {
+           help.className = "list active";
+           home.className = "list";
+           
+       }
+       help.onmouseout = function nohover() {
+        home.className = "list active";
+           updates.className = "list";  
+           learn.className = "list"; 
+           help.className = "list";  
+           signout.className = "list";  
+       }
+
+       learn.onmouseover = function hover() {
+           learn.className = "list active";
+           home.className = "list";
+         
+       }
+       learn.onmouseout = function nohover() {
+        home.className = "list active";
+           learn.className = "list";  
+           updates.className = "list";  
+           help.className = "list";  
+           signout.className = "list";  
+       }
+       updates.onmouseover = function hover() {
+           updates.className = "list active";
+           home.className = "list";
+           
+       }
+       updates.onmouseout = function nohover() {
+        home.className = "list active";
+           updates.className = "list";  
+           learn.className = "list"; 
+           help.className = "list";  
+           signout.className = "list";  
+       }
+     
+
+
+      
+       
+       
+
+
+
+
+
+
+
+
+       /* const list = document.getElementById('lister');
+        function activeLink(){
+            list.forEach((item) => 
+            this.classList.add('active'));
+        }
+        list.forEach((item) => 
+        item.addEventListener('click',activeLink()));*/
+    </script>
+    
+</body>
+
+</html>
