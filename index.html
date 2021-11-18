@@ -20,11 +20,16 @@ rel="stylesheet">
 </head>
 <body id="body">
     <div class="bar">
-        <h1 class="main">Zero Academy</h1>
+        
+       <div class="iconholder">
+        
+       </div> 
+       <h1 class="main">Zero Academy</h1>
+       <ion-icon onclick=" menua()" class="bars" name="menu-outline"></ion-icon>
     </div>
     <section class="body">
         <div class="sidetoside2">
-            <div class="navigation">
+            <div id="navig" class="navigation">
                 <ul>
                     <li id="home" class="list active">
                         <a href="">
@@ -238,7 +243,23 @@ rel="stylesheet">
        }
      
 
+       function menua() {
+        var menubtn = document.getElementById('navig');
+        
+           if (menubtn.style.width === "380px") {
+            menubtn.style.width = "0px"
+           }
+           else
+           {
+            menubtn.style.width = "380px"
+           }
+  
 
+        
+       }
+         
+        
+       
       
        
        
