@@ -14,11 +14,16 @@ body
     display: flex;
     flex-direction: row;
     justify-content: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 .navigation
 {
     width: 70px;
-    height: 100vh;
+    height:380px;
+   
+    border-bottom-right-radius: 20px;
+   
+    border-top-right-radius: 20px;
     
     position: relative;
     background: #550527;
@@ -128,9 +133,10 @@ body
 }
 .img1
 {
-    height: 300px;
+    height: 200px;
     margin-left: 10px;
-    opacity: 0.3;
+    
+    
 }
 .main
 {
@@ -141,4 +147,118 @@ body
     font-size: 35px;
     padding: 5px;
 }
+.form
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+form
+{
+   margin-top: 50px;
+   width: 270px;
+   height: 259px;
+   background: rgba(225, 225, 225, 0.4);
+   backdrop-filter: blur(10PX);
+   border-radius: 20px;
+   box-shadow: 0 0 20px #000;
+   color: white;
 
+}
+form label
+{
+    color: #000;
+    font-style: bold;
+    font-weight: 700;
+    
+}
+input
+{
+    border-radius: 20px;
+    height: 30px;
+    width: 210px;
+    padding: 10px;
+    background: rgba(42, 157, 143, 0.2);
+    color: black;
+   margin-bottom: 20px;
+   margin-top: 5px;
+    border: none;
+}
+form h1
+{
+    margin-top: 20px;
+    
+    font-family:'Genos', sans-serif;
+    color: #000;
+    font-style: bold;
+    font-weight:700;
+    font-size: 30px;
+    
+}
+form button
+{
+    width: 100px;
+    padding: 5px;
+    background: #2A9D8F;
+    border-radius: 20px;
+    color: white;
+  
+    padding: 6px;
+}
+form button:hover
+{
+    background: #1c6960;
+    padding: 7px;
+}
+hr
+{
+    margin-bottom: 10px;
+    background: #550527;
+    border-radius: 5px;
+    height: 3px;
+    border: none;
+}
+
+.content
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.left
+{
+    text-align: left;
+    padding: 20px;
+    color: white;
+    font-size: 26px;
+}
+.lister
+{
+    margin-left:20px; 
+    font-size: 20px
+}
+.sidetoside
+{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px) {
+
+    .sidetoside
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.lister
+{
+    margin-left:13px; 
+    font-size: 20px
+}
+}
