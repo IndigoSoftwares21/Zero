@@ -293,7 +293,7 @@ hr
    
     border-top-right-radius: 20px;
     
-    position: relative;
+    position: absolute;
     background: #550527;
     z-index: 9;
     padding: 1px;
