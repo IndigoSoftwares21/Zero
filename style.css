@@ -12,7 +12,7 @@ body
 .body
 {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     justify-content: 10px;
     font-family: 'Raleway', sans-serif;
 }
@@ -27,7 +27,7 @@ body
     
     position: relative;
     background: #550527;
-    
+    z-index: 9;
     padding: 20px;
     box-shadow: 10px 0 0 #2A9D8F;
     font-family: 'Raleway', sans-serif;
@@ -247,6 +247,11 @@ hr
     display: flex;
     flex-direction: row;
 }
+.sidetoside2
+{
+    display: flex;
+    flex-direction: row;
+}
 
 @media (max-width: 700px) {
 
@@ -256,9 +261,19 @@ hr
     flex-direction: column;
     
 }
+.sidetoside2
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .lister
 {
     margin-left:13px; 
     font-size: 20px
+}
+form
+{
+    width: 250px;
 }
 }
