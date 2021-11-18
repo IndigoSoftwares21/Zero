@@ -152,7 +152,8 @@ body
 
 .img1
 {
-    height: 200px;
+    height: 250px;
+    width: 250px;
     margin-left: 10px;
     
     
@@ -258,9 +259,11 @@ hr
 .left
 {
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-size: 26px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 .lister
 {
@@ -305,6 +308,10 @@ hr
     
 }
 
+.imagehold
+{
+    text-align: center;
+}
 
 .navigation ul
 {
