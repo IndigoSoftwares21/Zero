@@ -61,6 +61,14 @@ body
     transition: width 0.5s;
     
 }
+.error
+{
+    color: red;
+    font-size: 13px;
+    font-weight: 300;
+    
+    display: none;
+}
 .navigation:hover
 {
     width: 300px;
@@ -215,12 +223,13 @@ form
 {
    margin-top: 50px;
    width: 270px;
-   height: 259px;
+   height: fit-content;
    background: rgba(225, 225, 225, 0.4);
    backdrop-filter: blur(10PX);
    border-radius: 20px;
    box-shadow: 0 0 20px #000;
    color: white;
+   padding: 10px;
 
 }
 form:hover
@@ -236,8 +245,10 @@ form label
 }
 input
 {
+   /* box-shadow: 0 0 10px red;*/
     border-radius: 20px;
     height: 30px;
+    
     width: 210px;
     padding: 10px;
     background: rgba(42, 157, 143, 0.2);

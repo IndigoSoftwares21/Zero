@@ -36,10 +36,21 @@ var firebaseConfig = {
 
   //signIN function
   function  signIn(){
+   var err = document.getElementById("error");
     var email = document.getElementById("email");
     var password  = document.getElementById("pwd");
-    const promise = auth.signInWithEmailAndPassword(email.value,password.value);
-    promise.catch(e=>alert(e.message));
+    if (password.value!='') {
+      const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+      promise.catch(e=>
+      err.style.display = "block"
+      );
+    }
+    else
+    {
+      password.style.boxShadow = "0 0 10px red";
+    }
+    
+  
     
     
   }
@@ -49,7 +60,6 @@ var firebaseConfig = {
 
   function signOut(){
     auth.signOut();
-    alert("SignOut Successfully from System");
     window.location.href = 'index.html';
   }
 
