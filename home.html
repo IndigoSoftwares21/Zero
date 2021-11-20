@@ -92,22 +92,7 @@ rel="stylesheet">
                 </ul>
                 
             </div>
-            <div class="form">
-                <form onsubmit="return false">
-                    <h1>Sign In</h1>
-                    <hr>
-                    <label class="lb" for="email">Email Address</label>
-                    <br>
-                    <input id="email" class="email" type="email" placeholder="Email Address">
-                    <br>
-                    <label class="lb" for="password">Registration Code</label>
-                    <br>
-                    <input  id="pwd" class="password" type="password" placeholder="Registration Code">
-                    <br>
-                    <button onclick="signIn()">Sign In</button>
-                </form>
-    
-            </div>
+           
         </div>
        
         <div class="content">
@@ -282,8 +267,7 @@ rel="stylesheet">
       var email = user.email;
       var name = user.displayName;
       //alert("Active user "+email+"Active user "+name);
-      alert("Active user Found")
-      window.location.href = 'home.html';
+     
       
 
     }else{
