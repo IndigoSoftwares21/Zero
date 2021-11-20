@@ -358,7 +358,7 @@ hr
     padding: 1px;
     box-shadow: 10px 0 0 #2A9D8F;
     font-family: 'Raleway', sans-serif;
-    border-left: 0px solid #550527;
+    border-left: 10px solid #550527;
     backdrop-filter: blur(10px);
     overflow-x: hidden;
     transition: width 0.5s;
