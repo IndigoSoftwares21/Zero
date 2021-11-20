@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Zero Academy</title>
@@ -10,6 +10,8 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script  src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
 <link
  href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200&display=swap" 
  rel="stylesheet">
@@ -76,7 +78,7 @@ rel="stylesheet">
                         </a>
                     </li>
                     <li id="signout" class="list">
-                        <a href="">
+                        <a href="" onclick="signOut()">
                             <span class="icon">
                                 <ion-icon name="power-outline"></ion-icon>
                              </span>
@@ -91,18 +93,18 @@ rel="stylesheet">
                 
             </div>
             <div class="form">
-                <form action="">
+                <form onsubmit="return false">
                     <h1>Sign In</h1>
                     <hr>
                     <label class="lb" for="email">Email Address</label>
                     <br>
-                    <input class="email" type="email" placeholder="Email Address">
+                    <input id="email" class="email" type="email" placeholder="Email Address">
                     <br>
                     <label class="lb" for="password">Registration Code</label>
                     <br>
-                    <input class="password" type="password" placeholder="Registration Code">
+                    <input  id="pwd" class="password" type="password" placeholder="Registration Code">
                     <br>
-                    <button>Sign In</button>
+                    <button onclick="signIn()">Sign In</button>
                 </form>
     
             </div>
@@ -117,7 +119,7 @@ rel="stylesheet">
                 
                 <div class="sidetoside">
                     <div class="imagehold">
-                        <img class="img1" src="img1.png" alt="">
+                        <img class="img1" src="images/img1.png" alt="">
                     </div>
                     
                     <div class="textbox">
@@ -142,7 +144,7 @@ rel="stylesheet">
                 <hr>
                 <div class="sidetoside">
                     <div class="imagehold">
-                        <img class="img1" src="img3.png" alt="">
+                        <img class="img1" src="images/img3.png" alt="">
                     </div>
                     
                     <div class="textbox">
@@ -191,7 +193,7 @@ rel="stylesheet">
       
     </section>
     
-    
+    <script  src="scripts/script.js"></script>
     <script>
         const home = document.getElementById("home");
         const learn = document.getElementById("learn");
@@ -275,7 +277,20 @@ rel="stylesheet">
 
 
 
+       firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
+      var email = user.email;
+      var name = user.displayName;
+      //alert("Active user "+email+"Active user "+name);
+     
+      
 
+    }else{
+      alert("No Active user Found")
+    }
+  })
+ 
+ 
 
 
        /* const list = document.getElementById('lister');

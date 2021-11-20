@@ -193,6 +193,10 @@ form
    color: white;
 
 }
+form:hover
+{
+    box-shadow: 0 0 30px #2A9D8F;
+}
 form label
 {
     color: #000;
