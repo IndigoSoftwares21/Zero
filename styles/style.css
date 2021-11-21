@@ -71,7 +71,7 @@ body
 }
 .navigation:hover
 {
-    width: 300px;
+    width: 300px; 
     
 }
 .navigation ul
@@ -91,6 +91,7 @@ body
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .one
 {
   font-size: 30px; 
