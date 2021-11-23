@@ -10,6 +10,7 @@ body
    
 }
 
+
 #ar
 {
     background: #264253;
@@ -196,6 +197,12 @@ body
     
     
 }
+.intro
+{
+    width: 520px;
+    height: 300px;
+    margin-top: 1px;
+}
 .main
 {
     font-family:'Genos', sans-serif;
@@ -230,7 +237,9 @@ form
    border-radius: 20px;
    box-shadow: 0 0 20px #000;
    color: white;
-   padding: 10px;
+
+   padding: 20px;
+   display: block;
 
 }
 form:hover
@@ -282,7 +291,20 @@ form button
 form button:hover
 {
     background: #1c6960;
-    padding: 7px;
+    padding: 5.5px;
+}
+form .btn
+{
+    width: 100px;
+    padding: 5px;
+    background: #1c6960;
+    border-radius: 20px;
+    color: white;
+}
+form .btn:hover
+{
+    background: #2A9D8F;
+    padding: 5.5px;
 }
 hr
 {

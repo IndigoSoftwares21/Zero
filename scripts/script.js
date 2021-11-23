@@ -63,7 +63,8 @@ var firebaseConfig = {
     window.location.href = 'index.html';
   }
 
+function buy() {
 
-
-
-
+  window.location.href = 'https://wa.link/iu2jed'
+  
+}
