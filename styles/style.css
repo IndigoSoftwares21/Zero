@@ -435,4 +435,10 @@ form
 {
     width: 250px;
 }
+.intro
+{
+    width: 330px;
+    height: 200px;
+    margin-top: 1px;
+}
 }
