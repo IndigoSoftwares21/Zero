@@ -398,6 +398,12 @@ hr
     transition: width 0.5s;
     
 }
+.intro
+{
+    width: 335px;
+    height: 200px;
+    margin-top: 1px;
+}
 
 .imagehold
 {
@@ -434,11 +440,5 @@ hr
 form
 {
     width: 250px;
-}
-.intro
-{
-    width: 330px;
-    height: 200px;
-    margin-top: 1px;
 }
 }
