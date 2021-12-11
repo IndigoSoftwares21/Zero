@@ -65,6 +65,6 @@ var firebaseConfig = {
 
 function buy() {
 
-  window.location.href = 'https://wa.link/iu2jed'
+  window.location.href = 'https://flutterwave.com/pay/zeroacademy'
   
 }
