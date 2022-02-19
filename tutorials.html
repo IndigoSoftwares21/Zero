@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
     
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/tutorials.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Zero Academy</title>
+    <title>Learn | Zero Academy</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,300;0,500;1,100;1,200&display=swap" 
 rel="stylesheet">
+
 </head>
 <body id="body">
     <div class="bar">
@@ -27,7 +28,6 @@ rel="stylesheet">
        <div class="iconholder">
         
        </div> 
-       <img class="logo" src="images/zzasmall.png" alt="">
        <h1 class="main">Zero Academy</h1>
        <ion-icon onclick=" menua()" class="bars" name="menu-outline"></ion-icon>
     </div>
@@ -36,7 +36,7 @@ rel="stylesheet">
             <div id="navig" class="navigation">
                 <ul>
                     <li id="home" class="list active">
-                        <a href="">
+                        <a href="home.html">
                             <span id="home" class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
                              </span>
@@ -47,7 +47,7 @@ rel="stylesheet">
                         </a>
                     </li>
                     <li id="learn" class="list">
-                        <a href="">
+                        <a href="tutorials.html">
                             <span class="icon">
                                 <ion-icon name="school-outline"></ion-icon>
                              </span>
@@ -94,41 +94,39 @@ rel="stylesheet">
                 </ul>
                 
             </div>
-            <div class="form">
-                <form onsubmit="return false">
-                    <h1>Sign In</h1>
-                    <hr>
-                    <label class="lb" for="email">Email Address</label>
-                    <br>
-                    <input id="email" class="email" type="email" placeholder="Email Address">
-                    <br>
-                    <label class="lb" for="password">Registration Code</label>
-                    <br>
-                    <input  id="pwd" class="password" type="password" placeholder="Registration Code">
-                    <br>
-                    <p id="error" class="error">Invalid Registration Code or No Account Found!</p>
-                    <br>
-                    <button onclick="signIn()">Sign In</button>
-                    <br>
-                    <br>
-                    <label for="" class="lb">No Registration Code?</label>
-                    <br>
-                    <button class="btn" onclick="buy()">Buy Now!</button>
-                </form>
-    
-            </div>
+                <div class="welcome">
+                       <p class="one">Welcome To Zero Academy</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi obcaecati
+                             facere doloremque voluptate fugiat minus ipsa doloribus.
+                              Adipisci voluptatum et tempore magni ratione consectetur
+                               cupiditate nam voluptatem autem. Ab, obcaecati.</p>
+                               <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusantium fugit aliquid voluptas placeat consectetur minus est, 
+                                    dicta ut asperiores natus cupiditate. 
+                                   Eius voluptatem consectetur iure ullam corporis consequuntur culpa labore.
+                               </p>
+        
+        
+        
+        
+        
+                </div>
+                
+                <div ></div>
         </div>
        
+        
         <div class="content">
             
          
-            <div class="left">
-                <h1>From Zero To Hero!</h1>
+            <div id="aa" class="left">
+                <h1>Submit Your Work</h1>
                 <hr>
                 
                 <div class="sidetoside">
                     <div class="imagehold">
-                        <video class="intro" src="videos/intro.mp4" controls></video>
+                        <img class="img1" src="images/img1.png" alt="">
                     </div>
                     
                     <div class="textbox">
@@ -147,60 +145,101 @@ rel="stylesheet">
                   
                 </div>
                 
-            </div>
-            <div class="left">
-                <h1>Course Outline</h1>
+            <div id="ar" class="left">
+                <h1>Web Development Course</h1>
                 <hr>
-                <div class="sidetoside">
-                    <div class="imagehold">
-                        <img class="img1" src="images/img3.png" alt="">
+ 
+                <div class="videos_container">
+                    <div class="video_details">
+                        <video src="videos/intro.mp4" controls></video>
+                        <p class="video_title" > Introduction To Web Development</p>
+                        <p class="video_text">This video guides you on how to set up your computer for Web Development <br>
+                            Below are links to the needed resources:<br>
+                            <p class="video_resources"> 
+                                1) Visual Studio Code <a href="">Download</a>
+                                <br>
+                                <br>
+                                2) Google Chrome Browser <a href="">Download</a>
+                            </p>
+
+                        </p>
+                    </div>
+                    <div class="video_details">
+                        <video src="videos/intro.mp4" controls></video>
+                    </div>
+                    <div class="video_details">
+                        <video src="videos/intro.mp4" controls></video>
+                    </div>
+                    <div class="video_details">
+                        <video src="videos/intro.mp4" controls></video>
+                    </div>
+                    <div class="video_details">
+                        <video src="videos/intro.mp4" controls></video>
+                    </div>
+                    <div class="video_details">
+                        <video src="videos/intro.mp4" controls></video>
                     </div>
                     
-                    <div class="textbox">
-                        <p>What Can You Learn In 7 Days? </p> 
-                       
-                     <li>HTML
-                        <li class="lister"  >What Is HTML and What Does It Do?</li>
-                        <li class="lister"  >Enviroment Set Up | VSCODE</li>
-                     <li class="lister"  >Syntax => Tags | Atrributes</li>
-                     <li class="lister"  >Tag and Atrributes Properties and Usage</li>
-                     <li class="lister"  >Assesment Test</li>
-                     </li>
-                     <br>
-                     <li>CSS
-                        <li class="lister"  >What Is CSS and What Does It Do?</li>
-                        <li class="lister"  >Syntax => Selectors</li>
-                        <li class="lister"  >Properties and Usage</li>
-                        <li class="lister" >Assesment Test</li>
-                        </li>
-                        <br>
-                        <li>JavaScript
-                            <li class="lister" >What Is JavaScript and What Does It Do?</li>
-                            <li class="lister" >Syntax</li>
-                            <li class="lister" >Basic JavaScript I</li>
-                            <li class="lister">Web Project I</li>
-                            <li class="lister" >Assesment Test</li>
-                            </li>
-                        <br>
-                            <li>Extra 
-                                <li class="lister">Web Project I</li>
-                                <li class="lister" >Certificate of Course Completion</li>
-                                <li class="lister" >Coding Challenge</li>
-                                <li class="lister">Web Project I</li>
-                                <li class="lister"  >Appreciation</li>
-                                </li>
-                        
-                    </div>
+                    
+                    
+                    
+                   
+                </div> 
                   
                 </div>
-                
+                <div id="ar" class="left">
+                    <h1>C# Development Course</h1>
+                    <hr>
+     
+                    <div class="videos_container">
+                        <div class="video_details">
+                            <video src="videos/intro.mp4" controls></video>
+                            <p class="video_title" > Introduction To Web Development</p>
+                            <p class="video_text">This video guides you on how to set up your computer for Web Development <br>
+                                Below are links to the needed resources:<br>
+                                <p class="video_resources"> 
+                                    1) Visual Studio Code <a href="">Download</a>
+                                    <br>
+                                    <br>
+                                    2) Google Chrome Browser <a href="">Download</a>
+                                </p>
+    
+                            </p>
+                        </div>
+                        <div class="video_details">
+                            <video src="videos/intro.mp4" controls></video>
+                        </div>
+                        <div class="video_details">
+                            <video src="videos/intro.mp4" controls></video>
+                        </div>
+                        <div class="video_details">
+                            <video src="videos/intro.mp4" controls></video>
+                        </div>
+                        <div class="video_details">
+                            <video src="videos/intro.mp4" controls></video>
+                        </div>
+                        <div class="video_details">
+                            <video src="videos/intro.mp4" controls></video>
+                        </div>
+                        
+                        
+                        
+                        
+                       
+                    </div> 
+                      
+                    </div>
             </div>
             
         </div>
       
       
     </section>
+   
+        
     
+
+    </div>
     <script  src="scripts/script.js"></script>
     <script>
         const home = document.getElementById("home");
@@ -290,12 +329,11 @@ rel="stylesheet">
       var email = user.email;
       var name = user.displayName;
       //alert("Active user "+email+"Active user "+name);
-      
-      window.location.href = 'home.html';
+     
       
 
     }else{
-      
+        window.location.href = 'index.html';
     }
   })
  
